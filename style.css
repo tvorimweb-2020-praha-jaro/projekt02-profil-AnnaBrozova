@@ -1,19 +1,111 @@
 /* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
-html { box-sizing: border-box; }
-*, ::after, ::before { box-sizing: inherit; }
-
-/*
- BARVY
- czechitas  #b92e81
- pozadi     #bdc3c7
- tmava      #31363b
- delitka    #3f464d
- portfolio  #e74c3c
- facebook   #3b5998
- twitter    #1da1f2
-*/
-
-
-body {
+html {
+    box-sizing: border-box;
+  }
+  *,
+  ::after,
+  ::before {
+    box-sizing: inherit;
+  }
+  
+  /*
+   BARVY
+   czechitas  #b92e81
+   pozadi     #bdc3c7
+   tmava      #31363b
+   delitka    #3f464d
+   portfolio  #e74c3c
+   facebook   #3b5998
+   twitter    #1da1f2
+  */
+  
+  body {
     background-color: #bdc3c7;
-}
+  }
+  .profil {
+    background-color: #31363b;
+    box-shadow: 1px 1px 4px #31363b; 
+    color: #bdc3c7;
+    width: 250px;
+  }
+  
+  .obsah {
+    padding: 10px 20px;
+  }
+  
+  .jmeno {
+    color: white;
+    font-family: "Montserrat";
+    font-size: 23px;
+    margin: 20px 0;
+  }
+  
+  .obsah p {
+    font-family: "Source Sans Pro";
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 20px 0;
+  }
+  
+  .foto {
+    width: 250px;
+  }
+  
+  .logo {
+    background-color: #b92e81;
+    border-radius: 50%;
+    position: absolute;
+    top: 150px;
+    left: 180px;
+    box-shadow : 1px 1px 1px 1px #31363b; 
+  }
+  
+  .odkazy {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .portfolio {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #3f464d;
+    text-align: center;
+    width: 250px;
+  }
+  
+  .facebook,
+  .twitter {
+    text-align: center;
+    width: 50%;
+    border-right: 1px solid #3f464d;
+  }
+  
+  .odkazy li {
+    display: inline-block;
+  }
+  
+  .odkazy a {
+    color: #bdc3c7;
+    display: block;
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  .portfolio a:hover,
+  .portfolio a:focus {
+    background-color: #e74c3c;
+  }
+  
+  .facebook a:hover,
+  .facebook a:focus {
+    background-color: #3b5998;
+  }
+
+   .twitter a:hover,
+   .twitter a:focus {
+     background-color: #1da1f2;
+   }
